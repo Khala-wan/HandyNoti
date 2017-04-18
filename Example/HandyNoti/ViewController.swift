@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         NotificationCenter.default.addHandyObserver(self, selector: #selector(callBack), name: "handy", object: nil)
         NotificationCenter.default.addHandyObserver(self, selector: #selector(callBack), name: "handy", object: nil)
         NotificationCenter.default.addHandyObserver(self, selector: #selector(callBack), name: "handy", object: nil)
+        NotificationCenter.default.addHandyObserver(self, selector: #selector(callBack), name: "handy", object: nil)
+        NotificationCenter.default.removeHandyObserver(self)
     }
     
     
