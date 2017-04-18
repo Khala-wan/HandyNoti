@@ -1,0 +1,6 @@
+framework module HandyNoti {
+  umbrella header "HandyNoti-umbrella.h"
+
+  export *
+  module * { export * }
+}

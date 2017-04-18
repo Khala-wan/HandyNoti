@@ -1,0 +1,6 @@
+framework module Pods_HandyNoti_Example {
+  umbrella header "Pods-HandyNoti_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

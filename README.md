@@ -1,6 +1,6 @@
 # HandyNoti
 
-[![CI Status](http://img.shields.io/travis/wansheng_ios@sina.com/HandyNoti.svg?style=flat)](https://travis-ci.org/wansheng_ios@sina.com/HandyNoti)
+[![CI Status](http://img.shields.io/travis/Kara-wan/HandyNoti.svg?style=flat)](https://travis-ci.org/Kara-wan/HandyNoti)
 [![Version](https://img.shields.io/cocoapods/v/HandyNoti.svg?style=flat)](http://cocoapods.org/pods/HandyNoti)
 [![License](https://img.shields.io/cocoapods/l/HandyNoti.svg?style=flat)](http://cocoapods.org/pods/HandyNoti)
 [![Platform](https://img.shields.io/cocoapods/p/HandyNoti.svg?style=flat)](http://cocoapods.org/pods/HandyNoti)
