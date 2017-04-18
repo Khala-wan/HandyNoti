@@ -11,6 +11,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- Swift 3.0+
+- Xcode 8.2+
+
+## Usage
+
+``` swift
+       #注册监听
+       NotificationCenter.default.addHandyObserver(self, selector: #selector(callBack), name: "handy", object: nil)
+       
+       #注销监听
+       NotificationCenter.default.removeHandyObserver(self)
+```
+
 ## Installation
 
 HandyNoti is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +35,7 @@ pod "HandyNoti"
 
 ## Author
 
-wansheng_ios@sina.com, wansheng_ios@sina.com
+wansheng_ios@sina.com
 
 ## License
 
