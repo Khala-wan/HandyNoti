@@ -6,7 +6,7 @@ extension NotificationCenter {
     
     open func addHandyObserver(_ observer: NSObject, selector aSelector: Selector, name aName: String, object anObject: Any?){
         
-        guard checkOutNotiPool(observer ,aName, newSel: aSelector) else {
+        guard !checkOutNotiPool(observer ,aName, newSel: aSelector) else {
             return
         }
         registerNoti(observer, selector: aSelector, name: aName, object: anObject)

@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0843AF71A4496064121DA905 /* Pods_HandyNoti_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyNoti_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F5B381A7B536EE96C3C26B8 /* HandyNoti.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HandyNoti.podspec; path = ../HandyNoti.podspec; sourceTree = "<group>"; };
+		0F5B381A7B536EE96C3C26B8 /* HandyNoti.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HandyNoti.podspec; path = ../HandyNoti.podspec; sourceTree = "<group>"; };
 		2F6A8FB7B086F094D69FE77A /* Pods-HandyNoti_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyNoti_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandyNoti_Tests/Pods-HandyNoti_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F8119AA97291184FEC51C36 /* Pods_HandyNoti_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyNoti_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CF1A30DB87BDA79B0F39402 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5CF1A30DB87BDA79B0F39402 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HandyNoti_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandyNoti_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D39485FD5A653FFC7379E7D /* Pods-HandyNoti_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyNoti_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandyNoti_Example/Pods-HandyNoti_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CEB0BE797CF78955FBBD8AAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CEB0BE797CF78955FBBD8AAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E9DE6A54E37F935D892D845C /* Pods-HandyNoti_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyNoti_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandyNoti_Example/Pods-HandyNoti_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FC88E7C765D1E5C9DEE90218 /* Pods-HandyNoti_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandyNoti_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandyNoti_Tests/Pods-HandyNoti_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,7 +220,6 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
