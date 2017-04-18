@@ -8,5 +8,5 @@ xcode_workspcae: Example/HandyNoti.xcworkspace # 项目文件相对于.travis.ym
 
 xcode_scheme: HandyNoti-Example #你需要集成测试的scheme
 script:
-#- set -o pipefail && xcodebuild test -workspace Example/HandyNoti.xcworkspace -scheme HandyNoti-Example -sdk iphonesimulator8.0 ONLY_ACTIVE_ARCH=NO | xcpretty
+#- set -o pipefail && xcodebuild test -workspace Example/HandyNoti.xcworkspace -scheme HandyNoti-Example -sdk iphonesimulator10.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
