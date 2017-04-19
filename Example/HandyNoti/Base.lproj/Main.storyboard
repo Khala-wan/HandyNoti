@@ -1,25 +1,111 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wEH-kl-YJg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--单通知注册-->
+        <scene sceneID="3TO-ff-SFw">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Zk-aH-z9I" customClass="ViewController" customModule="HandyNoti_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="Mj5-Uj-aPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZDG-KQ-4Lz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="q2Z-oV-GZM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSQ-gK-Htg">
+                                <rect key="frame" x="50" y="185" width="106" height="30"/>
+                                <state key="normal" title="Handy增加监听"/>
+                                <connections>
+                                    <action selector="handyAddBtnClicked:" destination="1Zk-aH-z9I" eventType="touchUpInside" id="uDW-RS-dl7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeB-2x-mvZ">
+                                <rect key="frame" x="245" y="215" width="62" height="30"/>
+                                <state key="normal" title="删除监听"/>
+                                <connections>
+                                    <action selector="removeBtnClicked:" destination="1Zk-aH-z9I" eventType="touchUpInside" id="87q-q4-yS0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PK-4Q-2hP">
+                                <rect key="frame" x="50" y="114" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已监听0次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyo-Lu-aCM">
+                                <rect key="frame" x="245" y="114" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o35-Te-9EN">
+                                <rect key="frame" x="50" y="235" width="103" height="30"/>
+                                <state key="normal" title="native增加监听"/>
+                                <connections>
+                                    <action selector="nativeAddBtnClicked:" destination="1Zk-aH-z9I" eventType="touchUpInside" id="Faj-Dx-bHz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-2I-4Kv">
+                                <rect key="frame" x="156.5" y="315" width="62" height="30"/>
+                                <state key="normal" title="Post通知"/>
+                                <connections>
+                                    <action selector="postBtnClicked:" destination="1Zk-aH-z9I" eventType="touchUpInside" id="xKj-9z-W9Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lyo-Lu-aCM" secondAttribute="trailing" constant="50" id="4dw-41-cRX"/>
+                            <constraint firstItem="o35-Te-9EN" firstAttribute="leading" secondItem="gSQ-gK-Htg" secondAttribute="leading" id="FPb-ad-2e3"/>
+                            <constraint firstItem="JAQ-2I-4Kv" firstAttribute="top" secondItem="o35-Te-9EN" secondAttribute="bottom" constant="50" id="IOc-d3-xQO"/>
+                            <constraint firstItem="gSQ-gK-Htg" firstAttribute="leading" secondItem="9PK-4Q-2hP" secondAttribute="leading" id="LUx-X7-1GV"/>
+                            <constraint firstItem="gSQ-gK-Htg" firstAttribute="top" secondItem="9PK-4Q-2hP" secondAttribute="bottom" constant="50" id="Mav-jI-xq4"/>
+                            <constraint firstItem="o35-Te-9EN" firstAttribute="top" secondItem="gSQ-gK-Htg" secondAttribute="bottom" constant="20" id="OZj-Cg-hO9"/>
+                            <constraint firstItem="lyo-Lu-aCM" firstAttribute="top" secondItem="Mj5-Uj-aPq" secondAttribute="bottom" constant="50" id="buF-a0-HNl"/>
+                            <constraint firstItem="DeB-2x-mvZ" firstAttribute="leading" secondItem="lyo-Lu-aCM" secondAttribute="leading" id="dZX-cA-9h3"/>
+                            <constraint firstItem="DeB-2x-mvZ" firstAttribute="top" secondItem="gSQ-gK-Htg" secondAttribute="bottom" id="eqA-9X-Ow3"/>
+                            <constraint firstItem="9PK-4Q-2hP" firstAttribute="top" secondItem="Mj5-Uj-aPq" secondAttribute="bottom" constant="50" id="gxT-DT-6uR"/>
+                            <constraint firstItem="9PK-4Q-2hP" firstAttribute="leading" secondItem="q2Z-oV-GZM" secondAttribute="leading" constant="50" id="jbL-ym-Urj"/>
+                            <constraint firstItem="JAQ-2I-4Kv" firstAttribute="centerX" secondItem="q2Z-oV-GZM" secondAttribute="centerX" id="rdc-Lc-6iC"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="单通知注册" id="jNF-xg-pBR"/>
+                    <connections>
+                        <outlet property="handyAddBtn" destination="gSQ-gK-Htg" id="MMk-eA-dqd"/>
+                        <outlet property="nativeAddBtn" destination="o35-Te-9EN" id="4zc-Th-aAg"/>
+                        <outlet property="oberserCountLabel" destination="lyo-Lu-aCM" id="Vtu-Kn-yUx"/>
+                        <outlet property="postBtn" destination="JAQ-2I-4Kv" id="vBV-Ga-BjH"/>
+                        <outlet property="removeBtn" destination="DeB-2x-mvZ" id="OxV-Wb-0AN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Eh-iH-tDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-342" y="-449"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b5O-h8-SiQ">
+            <objects>
+                <navigationController id="wEH-kl-YJg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Y7-Yz-mnV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Zk-aH-z9I" kind="push" id="nNI-RS-rGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45N-dM-h17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1366" y="-449"/>
         </scene>
     </scenes>
 </document>
